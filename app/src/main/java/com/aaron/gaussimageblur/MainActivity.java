@@ -1,17 +1,16 @@
 package com.aaron.gaussimageblur;
 
-import androidx.annotation.DrawableRes;
-import androidx.annotation.IdRes;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.graphics.Bitmap;
+import android.graphics.BitmapFactory;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
 
 import com.aaron.gaussblur.GaussBlur;
-import com.aaron.gaussblur.ScaleValue;
+import com.aaron.gaussblur.ColorFilter;
 
 public class MainActivity extends AppCompatActivity {
     public static final float DEFAULT_BLUR_RADIUS = 10.0f;
@@ -32,7 +31,9 @@ public class MainActivity extends AppCompatActivity {
         btnBlur.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                blurImage(R.drawable.example_image, DEFAULT_BLUR_RADIUS, ScaleValue.SCALE_VALUE_8);
+//                blurImage(R.drawable.example_image, DEFAULT_BLUR_RADIUS, ScaleValue.SCALE_VALUE_8);
+                Bitmap oriBitmap = BitmapFactory.decodeResource(getResources(), R.drawable.example_image);
+                ivBlurImage.setImageBitmap(colorFilterImage(oriBitmap));
             }
         });
 
@@ -54,6 +55,13 @@ public class MainActivity extends AppCompatActivity {
                 .scale(scale)
                 .blur();
         ivBlurImage.setImageBitmap(bitmap);
+    }
+
+    public Bitmap colorFilterImage(Bitmap oriBitmap){
+        return ColorFilter.with()
+                .red(76f)
+                .saturation(2f)
+                .colorFilter(oriBitmap);
     }
 
     private boolean isValidRadius(float radius){
