@@ -79,6 +79,7 @@ public class ColorFilter {
         if (oriBitmap == null){
             return null;
         }
+        //不能在原图进行变换操作，所以新建一个bitmap来实现
         Bitmap bitmap = Bitmap.createBitmap(oriBitmap.getWidth(), oriBitmap.getHeight(), Bitmap.Config.RGB_565);
         Canvas canvas = new Canvas(bitmap);
         setMatrix();
@@ -105,6 +106,7 @@ public class ColorFilter {
         brightnessMatrix.setScale(mBrightness, mBrightness, mBrightness, 1);
 
         ColorMatrix imageMatrix = new ColorMatrix();
+        //postConcat方法将矩阵变换进行叠加，共同实现效果
         imageMatrix.postConcat(hueMatrix);
         imageMatrix.postConcat(saturationMatrix);
         imageMatrix.postConcat(brightnessMatrix);
@@ -112,7 +114,7 @@ public class ColorFilter {
         paint.setColorFilter(new ColorMatrixColorFilter(imageMatrix));
     }
     /**
-     * 通过setRotate方法设置色调，实质是将传入色调值作为角度，计算弧长。
+     * @description 通过setRotate方法设置色调，实质是将传入色调值作为角度，计算弧长。
      * 然后计算cos和sin值，构造颜色变换矩阵。cos和sin都是周期2π的周期函数
      * @param hue
      * @return

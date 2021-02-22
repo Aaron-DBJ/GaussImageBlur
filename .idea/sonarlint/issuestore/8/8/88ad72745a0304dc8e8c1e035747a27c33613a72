@@ -1,0 +1,7 @@
+
+X
+java:S1128	";Remove this unused import 'androidx.annotation.FloatRange'.(ê»’î8”×·÷.
+V
+java:S3400y"9Remove this method and declare a constant for this value.(”·³›8ó§÷.
+G
+java:S1172x"*Remove this unused method parameter "hue".(ûÎÁ¦8ó§÷.

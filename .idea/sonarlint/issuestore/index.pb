@@ -8,4 +8,4 @@ l
 j
 :gaussblur/src/main/java/com/aaron/gaussblur/GaussBlur.java,f/5/f50a5662ed4d64ca553dacdba49850ce76e69e36
 l
-<gaussblur/src/main/java/com/aaron/gaussblur/ImageHelper.java,b/7/b74120e84a62f33273b0378bcd4ead951acc45af
+<gaussblur/src/main/java/com/aaron/gaussblur/ColorFilter.java,8/8/88ad72745a0304dc8e8c1e035747a27c33613a72
