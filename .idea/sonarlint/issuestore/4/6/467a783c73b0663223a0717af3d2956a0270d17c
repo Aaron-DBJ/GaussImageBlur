@@ -1,19 +1,13 @@
 
-S
-java:S1128"6Remove this unused import 'androidx.annotation.IdRes'.(ŸµŞù8ã•çõó.
-t
-java:S1450"WRemove the "btnReset" field and declare it as a local variable in the relevant methods.(ö“Ê÷8Õ³õó.
-^
-java:S1128"<Remove this unused import 'androidx.annotation.DrawableRes'.(¦ˆüîûÿÿÿÿ8…¸èõó.
-s
-java:S1450"VRemove the "btnBlur" field and declare it as a local variable in the relevant methods.(ö“Ê÷8Õ³õó.
-X	java:S110"<This class has 9 parents which is greater than 5 authorized.(²Ú±8µÎå“ö.
-J
-java:S1604."(Make this anonymous inner class a lambda(ˆ×Üíûÿÿÿÿ8Õ³õó.
 C
-java:S1659"&Declare "btnReset" on a separate line.(ö“Ê÷8Õ³õó.
+java:S1659"&Declare "btnReset" on a separate line.(ö“Ê÷8Õ³õó.
+X	java:S125""<This block of commented-out lines of code should be removed.(¥å©Ç8¼ÙÂ”ö.
+J
+java:S1604("(Make this anonymous inner class a lambda(ˆ×Üíûÿÿÿÿ8Õ³õó.
+t
+java:S1450"WRemove the "btnReset" field and declare it as a local variable in the relevant methods.(ö“Ê÷8Õ³õó.
 D
-java:S1604#"(Make this anonymous inner class a lambda(˜Ëó8Õ³õó.
-X	java:S125&"<This block of commented-out lines of code should be removed.(¥å©Ç8¼ÙÂ”ö.
-]
-java:S1128"@Remove this unused import 'androidx.core.graphics.BitmapCompat'.(é›Îñ8ûŠÙ”ö.
+java:S1604"(Make this anonymous inner class a lambda(˜Ëó8Õ³õó.
+X	java:S110"<This class has 9 parents which is greater than 5 authorized.(²Ú±8§ øçö.
+s
+java:S1450"VRemove the "btnBlur" field and declare it as a local variable in the relevant methods.(ö“Ê÷8Õ³õó.
